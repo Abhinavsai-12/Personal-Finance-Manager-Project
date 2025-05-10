@@ -1,6 +1,9 @@
 // Load transactions from localStorage or initialize with an empty array
 let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 
+
+
+
 // Select DOM elements
 const balanceEl = document.getElementById('balance'); // Display balance
 const formEl = document.getElementById('transactionForm'); // Form element
@@ -9,6 +12,9 @@ const amountEl = document.getElementById('amount'); // Transaction amount input
 const typeEl = document.getElementById('type'); // Transaction type dropdown
 const tableEl = document.getElementById('transactionsTable').getElementsByTagName('tbody')[0]; // Table body
 const exportBtn = document.getElementById('exportButton'); // Export button
+
+
+
 
 // Function to calculate and update the balance
 function updateBalance() {
